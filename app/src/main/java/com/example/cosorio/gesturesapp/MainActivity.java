@@ -50,8 +50,8 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
         return true;
     }
 
-    @Override
-    public boolean onDoubleTapEvent(MotionEvent e) {
+    @Override public boolean onDoubleTapEvent(MotionEvent e) {
+        gestureText.setText("On Down Confirmed");
         return true;
     }
 
@@ -70,8 +70,7 @@ public class MainActivity extends AppCompatActivity implements GestureDetector.O
 
     @Override
     public void onShowPress(MotionEvent e) {
-        ;
-
+        gestureText.setText("On Show Press");
     }
 
     @Override
